@@ -1,150 +1,144 @@
 {
-    "Simple Console Log Shortcut for JS Objects": {
-        "prefix": "clg",
-        "body": [
-            "console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', 'color: #007acc;', ${1:object});"
-        ],
-        "description": "Simple Console Log Shortcut for JS Objects - Blue Text"
-    },
-    "Console Log Green Text": {
-        "prefix": "clgg",
-        "body": [
-            "console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:Object}$2', 'color: #26bfa5;', ${1:Object});"
-        ],
-        "description": "Simple Console Log Shortcut for JS Objects - Green Text"
-    },
-    "Console Log Blue Background": {
-        "prefix": "clgbb",
-        "body": [
-            "console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:Object}$2', 'color: white; background-color: #007acc;', ${1:Object});"
-        ],
-        "description": "Simple Console Log Shortcut for JS Objects - Blue Background"
-    },
-    "Console Log Green Background ": {
-        "prefix": "clggb",
-        "body": [
-            "console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:Object}$2', 'color: white; background-color: #26bfa5;', ${1:Object});"
-        ],
-        "description": "Simple Console Log Shortcut for JS Objects - Green Background"
-    },
-    "Console Log Hello": {
-        "prefix": "clghello",
-        "body": [
-            "console.log('%cHello ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} $1', 'background: green; color: white; display: block;');"
-        ],
-        "description": "Console logs ->  Hello ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} on Green Background"
-    },
-    "Console Log Node Hello": {
-        "prefix": "clgnhello",
-        "body": [
-            "console.log('\\x1b[42m%s\\x1b[0m', 'Hello ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER}$1');"
-        ],
-        "description": "Node Console logs ->  Hello ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} on Green Background"
-    },
-    "Console Log Error": {
-        "prefix": "clgerr",
-        "body": [
-            "console.log('%cerror ${1:${RELATIVE_FILEPATH}} ${2:line:${TM_LINE_NUMBER}} $3', 'color: red; display: block; width: 100%;', error);"
-        ],
-        "description": "Find errors with style"
-    },
-    "Console Log Rainbow": {
-        "prefix": "clgr",
-        "body": [
-            "console.log('%c ${1:Rainbowww!}', 'font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%;');"
-        ],
-        "description": "You need a Rainbow in your code"
-    },
-    "Console Log huh": {
-        "prefix": "clghuh",
-        "body": [
-            "console.log('%c ', 'background: no-repeat url(https://i.cloudup.com/Zqeq2GhGjt-3000x3000.jpeg); font-size: 1px; padding: 166.5px 250px; background-size: 500px 333px;');"
-        ],
-        "description": "Confused?! so put a this guy in your code."
-    },
-    "Console Log Bug GIF": {
-        "prefix": "clgbug",
-        "body": [
-            "console.log('%c ', 'font-size: 1px; padding: 240px 123.5px; background-size: 247px 480px; background: no-repeat url(https://i2.wp.com/i.giphy.com/media/11ZSwQNWba4YF2/giphy-downsized.gif?w=770&amp;ssl=1);');"
-        ],
-        "description": "Bugs, bugs, bugs and more bugs"
-    },
-    "Console Log It's Working!!! GIF": {
-        "prefix": "clgclbrt",
-        "body": [
-            "console.log('%c ', 'font-size: 1px; padding: 125px 125px; background-size: 250px 250px; background: no-repeat url(https://i2.wp.com/i.giphy.com/media/12BYUePgtn7sis/giphy-downsized.gif?w=770&amp;ssl=1);');"
-        ],
-        "description": "Celebrate your code works!"
-    },
-    "Console Log Coding GIF": {
-        "prefix": "clgc",
-        "body": [
-            "console.log('%c ', 'font-size: 1px; padding: 215px 385px; background-size: 770px 430px; background: no-repeat url(https://i0.wp.com/i.giphy.com/media/ZVik7pBtu9dNS/giphy-downsized.gif?w=770&amp;ssl=1);');"
-        ],
-        "description": "Coding GIF"
-    },
-    "Console Log JSON String Output": {
-        "prefix": "clgj",
-        "body": [
-            "console.log(",
-            "\t'%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2',",
-            "\t'color: #007acc;',",
-            "\tJSON.stringify(${1:object}, null, \"\\t\" )",
-            ");"
-        ],
-        "description": "JSON String Output"
-    },
-    "Console Log JSON String Output Node ANSII Blue": {
-        "prefix": "clgnj",
-        "body": [
-            "console.log(",
-            "\t'\\x1b[44m%s\\x1b[0m',",
-            "\t'${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2',",
-            "\tJSON.stringify(${1:object}, null, \"\\t\" )",
-            ");"
-        ],
-        "description": "CLG: Node JSON String Output, Node ANSII Color Blue Background"
-    },
-    "Console Log Node ANSII Color RED Background": {
-        "prefix": "clgnrb",
-        "body": [
-            "console.log('\\x1b[41m%s\\x1b[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
-        ],
-        "description": "Node ANSII Color RED Background"
-    },
-    "Console Log Node ANSII Color Green Background": {
-        "prefix": "clgngb",
-        "body": [
-            "console.log('\\x1b[42m%s\\x1b[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
-        ],
-        "description": "Node ANSII Color Green Background"
-    },
-    "Console Log Node ANSII Color Blue Background": {
-        "prefix": "clgnbb",
-        "body": [
-            "console.log('\\x1b[44m%s\\x1b[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
-        ],
-        "description": "Node ANSII Color Blue Background"
-    },
-    "Console Log Node ANSII Color RED Foreground": {
-        "prefix": "clgnrfg",
-        "body": [
-            "console.log('\\x1b[31m%s\\x1b[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
-        ],
-        "description": "Node ANSII Color RED Foreground"
-    },
-    "Console Log Node ANSII Color Green Foreground": {
-        "prefix": "clgngfg",
-        "body": [
-            "console.log('\\x1b[32m%s\\x1b[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
-        ],
-        "description": "Node ANSII Color Green Foreground"
-    },
-    "Console Log Node ANSII Color Blue Foreground": {
-        "prefix": "clgnbfg",
-        "body": [
-            "console.log('\\x1b[34m%s\\x1b[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
-        ],
-        "description": "Node ANSII Color Blue Foreground"
-    }
+  "Simple Console Log Shortcut for JS Objects": {
+    "prefix": "clg",
+    "body": ["console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', 'color: #007acc;', ${1:object});"],
+    "description": "Simple Console Log Shortcut for JS Objects - Blue Text"
+  },
+  "Console Log Green Text": {
+    "prefix": "clgg",
+    "body": ["console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:Object}$2', 'color: #26bfa5;', ${1:Object});"],
+    "description": "Simple Console Log Shortcut for JS Objects - Green Text"
+  },
+  "Console Log Blue Background": {
+    "prefix": "clgbb",
+    "body": [
+      "console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:Object}$2', 'color: white; background-color: #007acc;', ${1:Object});"
+    ],
+    "description": "Simple Console Log Shortcut for JS Objects - Blue Background"
+  },
+  "Console Log Green Background ": {
+    "prefix": "clggb",
+    "body": [
+      "console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:Object}$2', 'color: white; background-color: #26bfa5;', ${1:Object});"
+    ],
+    "description": "Simple Console Log Shortcut for JS Objects - Green Background"
+  },
+  "Console Log Hello": {
+    "prefix": "clghello",
+    "body": [
+      "console.log('%cHello ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} $1', 'background: green; color: white; display: block;');"
+    ],
+    "description": "Console logs -> Hello ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} on Green Background"
+  },
+  "Console Log Node Hello": {
+    "prefix": "clgnhello",
+    "body": ["console.log('\u001B[42m%s\u001B[0m', 'Hello ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER}$1');"],
+    "description": "Node Console logs ->  Hello ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} on Green Background"
+  },
+  "Console Log Error": {
+    "prefix": "clgerr",
+    "body": [
+      "console.log('%cerror ${1:${RELATIVE_FILEPATH}} ${2:line:${TM_LINE_NUMBER}} $3', 'color: red; display: block; width: 100%;', error);"
+    ],
+    "description": "Find errors with style"
+  },
+  "Console Log Rainbow": {
+    "prefix": "clgr",
+    "body": [
+      "console.log('%c ${1:Rainbowww!}', 'font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%;');"
+    ],
+    "description": "You need a Rainbow in your code"
+  },
+  "Console Log huh": {
+    "prefix": "clghuh",
+    "body": [
+      "console.log('%c', 'background: no-repeat url(https://i.cloudup.com/Zqeq2GhGjt-3000x3000.jpeg); font-size: 1px; padding: 166.5px 250px; background-size: 500px 333px;');"
+    ],
+    "description": "Confused?! so put a this guy in your code."
+  },
+  "Console Log Bug GIF": {
+    "prefix": "clgbug",
+    "body": [
+      "console.log('%c', 'font-size: 1px; padding: 240px 123.5px; background-size: 247px 480px; background: no-repeat url(https://i2.wp.com/i.giphy.com/media/11ZSwQNWba4YF2/giphy-downsized.gif?w=770&amp;ssl=1);');"
+    ],
+    "description": "Bugs, bugs, bugs and more bugs"
+  },
+  "Console Log It's Working!!! GIF": {
+    "prefix": "clgclbrt",
+    "body": [
+      "console.log('%c', 'font-size: 1px; padding: 125px 125px; background-size: 250px 250px; background: no-repeat url(https://i2.wp.com/i.giphy.com/media/12BYUePgtn7sis/giphy-downsized.gif?w=770&amp;ssl=1);');"
+    ],
+    "description": "Celebrate your code works!"
+  },
+  "Console Log Coding GIF": {
+    "prefix": "clgc",
+    "body": [
+      "console.log('%c', 'font-size: 1px; padding: 215px 385px; background-size: 770px 430px; background: no-repeat url(https://i0.wp.com/i.giphy.com/media/ZVik7pBtu9dNS/giphy-downsized.gif?w=770&amp;ssl=1);');"
+    ],
+    "description": "Coding GIF"
+  },
+  "Console Log JSON String Output": {
+    "prefix": "clgj",
+    "body": [
+      "console.log(",
+      "\t'%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2',",
+      "\t'color: #007acc;',",
+      "\tJSON.stringify(${1:object}, undefined, \"\\t\" )",
+      ");"
+    ],
+    "description": "JSON String Output"
+  },
+  "Console Log JSON String Output Node ANSII Blue": {
+    "prefix": "clgnj",
+    "body": [
+      "console.log(",
+      "\t'\u001B[44m%s\u001B[0m',",
+      "\t'${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2',",
+      "\tJSON.stringify(${1:object}, undefined, \"\\t\" )",
+      ");"
+    ],
+    "description": "CLG: Node JSON String Output, Node ANSII Color Blue Background"
+  },
+  "Console Log Node ANSII Color RED Background": {
+    "prefix": "clgnrb",
+    "body": [
+      "console.log('\u001B[41m%s\u001B[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
+    ],
+    "description": "Node ANSII Color RED Background"
+  },
+  "Console Log Node ANSII Color Green Background": {
+    "prefix": "clgngb",
+    "body": [
+      "console.log('\u001B[42m%s\u001B[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
+    ],
+    "description": "Node ANSII Color Green Background"
+  },
+  "Console Log Node ANSII Color Blue Background": {
+    "prefix": "clgnbb",
+    "body": [
+      "console.log('\u001B[44m%s\u001B[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
+    ],
+    "description": "Node ANSII Color Blue Background"
+  },
+  "Console Log Node ANSII Color RED Foreground": {
+    "prefix": "clgnrfg",
+    "body": [
+      "console.log('\u001B[31m%s\u001B[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
+    ],
+    "description": "Node ANSII Color RED Foreground"
+  },
+  "Console Log Node ANSII Color Green Foreground": {
+    "prefix": "clgngfg",
+    "body": [
+      "console.log('\u001B[32m%s\u001B[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
+    ],
+    "description": "Node ANSII Color Green Foreground"
+  },
+  "Console Log Node ANSII Color Blue Foreground": {
+    "prefix": "clgnbfg",
+    "body": [
+      "console.log('\u001B[34m%s\u001B[0m', '${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}$2', ${1:object});"
+    ],
+    "description": "Node ANSII Color Blue Foreground"
+  }
 }
